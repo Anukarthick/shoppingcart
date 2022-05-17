@@ -1,0 +1,104 @@
+<ng-container
+  *ngIf="(itemsService.cartItems && itemsService.cartItems.length > 0); else noData"
+>
+  <ng-container *ngTemplateOutlet="itemsList"> </ng-container>
+
+  <div class="mt-40">
+    <table border="1" width="40%" class="center">
+      <col width="20%" />
+      <col width="20%" />
+      <thead>
+        <th align="center">No of Items</th>
+        <th align="center">Total Amount</th>
+      </thead>
+      <tbody>
+        <td align="center">{{itemsService.cartItems.length}}</td>
+        <td align="center">{{itemsService.totalAmount}} $</td>
+      </tbody>
+    </table>
+  </div>
+  <div class="text-center mt-40">
+    <button class="btn btn-danger" (click)="openModal(modalData)">
+      Checkout
+    </button>
+  </div>
+</ng-container>
+<ng-template #noData>
+  <div class="text-center mt-40">
+    Your Cart is Empty
+  </div>
+</ng-template>
+<ng-template #modalData let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">
+      Cart Items
+    </h4>
+    <button
+      type="button"
+      class="close"
+      aria-label="Close"
+      data-dismiss="modal"
+      (click)="d('Cross click')"
+    >
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p class="ml-5">
+      <strong>Are you sure you want to continue the payment? </strong>
+    </p>
+    <ng-container *ngTemplateOutlet="itemsList"> </ng-container>
+  </div>
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-danger"
+      data-dismiss="modal"
+      (click)="d('Save click');getInvoice();"
+    >
+      Proceed
+    </button>
+  </div>
+</ng-template>
+
+<ng-template #itemsList>
+  <div class="mt-40">
+    <table border="1" width="80%" class="center">
+      <col width="20%" />
+      <col width="20%" />
+      <col width="20%" />
+      <col width="20%" />
+      <thead>
+        <tr>
+          <th align="center" *ngFor="let header of headers">
+            {{header}}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of itemsService.cartItems">
+          <td align="center">
+            {{item.name}}
+          </td>
+          <td align="center">
+            {{item.category | lowercase}}
+          </td>
+          <td align="center">
+            {{item.price}} $
+          </td>
+          <td align="center">
+            {{item.price}} $
+          </td>
+        </tr>
+        <tr>
+          <td align="center" colspan="3" class="font-weight-bold">
+            Total Amount
+          </td>
+          <td align="center" class="font-weight-bold">
+            {{itemsService.totalAmount}} $
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</ng-template>

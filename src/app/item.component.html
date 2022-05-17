@@ -1,0 +1,9 @@
+<div class="center mt-30">
+  <img [src]="selectedItem.image" width="300" height="300" />
+  <div class="ml-40 mt-30">
+    {{selectedItem.name}} {{selectedItem.price}} $
+    <button class="ml-30" (click)="additemToCart()" type="button" class="ml-40">
+      Add To Cart
+    </button>
+  </div>
+</div>

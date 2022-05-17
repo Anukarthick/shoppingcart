@@ -1,0 +1,28 @@
+<div class="center mt-30">
+  <ng-container *ngIf="(categoryItems && categoryItems.length > 0); else home">
+    <ng-container *ngFor="let categoryItem of categoryItems">
+      <ul>
+        <a class="curpdr" (click)="selectItem(categoryItem)">
+          <img [src]="categoryItem.image" width="300" height="300" />
+        </a>
+        <div class="ml-40 mt-10">
+          {{categoryItem.name}} {{categoryItem.price}} $
+        </div>
+      </ul>
+    </ng-container>
+  </ng-container>
+  <ng-template #home>
+    <ng-container *ngIf="isFromHome; else noitems">
+      <img
+        src="https://img.freepik.com/free-photo/online-shopping-concept-web-mobile-application-ecommerce-top-view-smartphone-with-carton-paper-box-with-shopping-cart-blue-background-3d-rendering_20693-786.jpg?size=626&ext=jpg"
+        width="1000"
+        height="1000"
+      />
+    </ng-container>
+    <ng-template #noitems>
+      <div class="mt-30">
+        No Items
+      </div>
+    </ng-template>
+  </ng-template>
+</div>

@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Winter Jacket",
+      "category": "MEN",
+      "price": 20,
+      "image": "https://www.gapfactory.com/webcontent/0027/656/689/cn27656689.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Wrist Watch",
+      "category": "MEN",
+      "price": 30,
+      "image": "https://ss7.vzw.com/is/image/VerizonWireless/wise-watch4-classic-42mm-smr885uzkv-black-42mm-a?hei=400"
+    },
+    {
+      "id": 3,
+      "name": "Wrist Band",
+      "category": "WOMEN",
+      "price": 5,
+      "image": "https://assets.hermes.com/is/image/hermesproduct/clic-h-bracelet--700001F%2019-worn-1-0-0-1440-1440_b.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Hand bag",
+      "category": "WOMEN",
+      "price": 20,
+      "image": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lockme-shopper-lockme-leather-handbags--M57345_PM2_Front%20view.png?wid=656&hei=656"
+    },
+    {
+      "id": 5,
+      "name": "Shoes",
+      "category": "CHILDREN",
+      "price": 20,
+      "image": "https://m.media-amazon.com/images/I/81GDCQZhqcL._AC_SR1840,1472_.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Kids Scraf",
+      "category": "CHILDREN",
+      "price": 10,
+      "image": "https://m.media-amazon.com/images/I/61bNfjKB6dL._AC_UL480_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Soccer Ball",
+      "category": "SPORTS",
+      "price": 20,
+      "image": "https://cdn.shopify.com/s/files/1/0209/5703/6644/products/soccer-ball-raspberry-leather-and-suede-athletics-made-by-alex-custom-610_1080x.jpg?v=1606505205"
+    },
+    {
+      "id": 8,
+      "name": "Base Ball",
+      "category": "SPORTS",
+      "price": 15,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_mj6xP6uWQscvSTILfuRZG64rOnXQgKvyKE-pKjvv6SyZTVbxX_59yd14BcUdKoxXP9M&usqp=CAU"
+    }
+  ]
+}

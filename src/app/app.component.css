@@ -1,0 +1,51 @@
+.mr-20 {
+  margin-right: 20px;
+}
+.curpdr {
+  cursor: pointer;
+}
+.active {
+  color: #0000ff;
+}
+.ml-40 {
+  margin-left: 40px !important;
+}
+.mt-10 {
+  margin-top: 10px !important;
+}
+.center {
+  text-align: center !important;
+}
+.btn-color {
+  background-color: #000080;
+}
+.float-rgt {
+  float: right !important;
+}
+.wd-100 {
+  width: 100% !important;
+}
+.wd-60 {
+  width: 60% !important;
+}
+.wd-40 {
+  width: 40% !important;
+}
+.border-top {
+  border-top: 2px solid;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  padding: 40px;
+  background: #ff0000;
+  text-align: center;
+}
+.fontsz14 {
+  font-size: 14px !important;
+}
+.toast-top-center {
+  top: 0;
+  right: 0;
+  width: 100%;
+}
